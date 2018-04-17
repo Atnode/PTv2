@@ -1,0 +1,4 @@
+User-agent: *
+Sitemap: http://www.planete-toad.fr/sitemap.xml
+Disallow: /erreur_403.html
+Disallow: /erreur_404.html

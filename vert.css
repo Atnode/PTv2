@@ -1,0 +1,19 @@
+h2{font-size:18px;color:#00ff00;font-weight:bold;height:21.2px;margin-left:5px}
+footer{width:100%;color:#fff;text-align:center;border-top:3px solid #00ff00;background:url(images/IMGFooter.png) #1a961a}
+.mdl-layout__header{background:url(images/IMGFooter.png) #26bf26}
+.boutonconnexion{background-color:#f32196!important}
+.footerText{background:rgba(222,200,200,0.5);text-shadow:1px 1px 2px rgba(0,0,0,0.3);padding:5px}
+.mdl-button--raised.mdl-button--colored{background:#26bf26}
+.content-mpme{background:#42c742!important}
+.forumNonLu{color:#00e800!important}
+.pageActive{color:green!important}
+.pagination{list-style:none;display:inline-block;padding:0;margin-top:10px}
+.pagination li{display:inline;text-align:center}
+.pagination a{float:left;display:block;font-size:14px;text-decoration:none;padding:5px 12px;color:#fff;margin-left:-1px;border:1px solid transparent;line-height:1.5}
+.pagination a.active{cursor:default}
+.pagination a:active{outline:none}
+.modal-4 a{margin:0 5px;padding:0;width:30px;height:30px;line-height:30px;border-radius:100%;background-color:#21ff21;color:white!important}
+.modal-4 a.prev{border-radius:50px 0 0 50px;width:100px}
+.modal-4 a.next{border-radius:0 50px 50px 0;width:100px}
+.modal-4 a:hover{background-color:#1aa51a}
+.modal-4 a.active,.modal-4 a:active{background-color:#1aa51a}

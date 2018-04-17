@@ -1,0 +1,196 @@
+AuthName "LudaWeb01 est en vie, vous ne pouvez pas entrer sinon vous serez mordue"
+AuthType Basic
+AuthUserFile "/home/pt/www-dev/.htpasswd"
+Require valid-user
+
+Options +MultiViews
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^noces.polux.info$
+RewriteRule ^(.*) http://www.planete-toad.fr/$1 [QSA,L,R=301]
+RewriteCond %{HTTP_HOST} ^planete-toad.fr$
+RewriteRule ^(.*) http://www.planete-toad.fr/$1 [QSA,L,R=301]
+RewriteCond %{HTTP_HOST} ^149.91.83.208$
+RewriteRule ^(.*) http://www.planete-toad.fr/$1 [QSA,L,R=301]
+RewriteRule ^erreur_404.html$ erreur.php?error=404 [L]
+RewriteRule ^erreur_403.html$ erreur.php?error=403 [L]
+RewriteRule ^index.html$ index.php [L]
+RewriteRule ^touteslespublis.html$ touteslespublis.php [L]
+RewriteRule ^connexion.html$ connexion.php [L]
+RewriteRule ^deconnexion.html$ deconnexion.php [L]
+RewriteRule ^deconnexion-(([a-zA-Z0-9]|-)*)\.html$ deconnexion.php?token=$1 [L]
+RewriteRule ^inscription.html$ inscription.php [L]
+RewriteRule ^modifierprofil.html$ modifierprofil.php [L]
+RewriteRule ^modifiermdp.html$ modifierprofil.php?cat=mdp [L]
+RewriteRule ^amis.html$ amis.php [L]
+RewriteRule ^notifs.html$ notifs.php [L]
+RewriteRule ^forum.html$ forum.php [L]
+RewriteRule ^membres.html$ membres.php [L]
+RewriteRule ^classement-chat.html$ classement-chat.php [L]
+RewriteRule ^badges.html$ badges.php [L]
+RewriteRule ^toadscup.html$ toadscup.php [L]
+RewriteRule ^chat.html$ minichat.php [L]
+RewriteRule ^chat-live.html$ minichat_live.php [L]
+RewriteRule ^contact.html$ contact.php [L]
+RewriteRule ^changedesign.html$ changedesign.php [L]
+RewriteRule ^newsnintendo.html$ newsnintendo.php [L]
+RewriteRule ^flash-mariohalloween.html$ flash-mariohalloween.php [L]
+RewriteRule ^flash-marioforever.html$ flash-marioforever.php [L]
+RewriteRule ^flash-luigirevenge.html$ flash-luigirevenge.php [L]
+RewriteRule ^flash-luigiday.html$ flash-luigiday.php [L]
+RewriteRule ^flash-smflash.html$ flash-smflash.php [L]
+RewriteRule ^flash-smb3.html$ flash-smb3.php [L]
+RewriteRule ^mp.html$ mp.php [L]
+RewriteRule ^espace-fictions.html$ espace-fictions.php [L]
+RewriteRule ^musee-index.html$ musee_index.php [L]
+RewriteRule ^musee-avatars.html$ musee_avatars.php [L]
+RewriteRule ^musee-jeux.html$ musee_jeux.php [L]
+RewriteRule ^musee-music.html$ musee_music.php [L]
+RewriteRule ^boutique.html$ boutique.php [L]
+RewriteRule ^musee-chronique.html$ musee_chronique.php [L]
+RewriteRule ^ntxp.html$ ntxp.php [L]
+RewriteRule ^personnages.html$ personnages.php [L]
+RewriteRule ^objets.html$ objets.php [L]
+RewriteRule ^lieux.html$ lieux.php [L]
+RewriteRule ^retrospectives.html$ retrospectives.php [L]
+RewriteRule ^jeux.html$ games.php [L]
+RewriteRule ^livreor.html$ livreor.php [L]
+RewriteRule ^pttv.html$ pttv.php [L]
+RewriteRule ^tennindo.html$ tennindo.php [L]
+RewriteRule ^equipe.html$ equipe.php [L]
+RewriteRule ^reseaux-sociaux.html$ reseaux-sociaux.php [L]
+RewriteRule ^sondage.html$ sondage.php [L]
+RewriteRule ^sujets_lus.html$ sujets_lus.php [L]
+RewriteRule ^delete-notifications.html$ delete-notifications.php [L]
+RewriteRule ^nouveau-mp.html$ mp.php?action=nouveau [L]
+RewriteRule ^conversation-([0-9]+)\.html$ mp.php?action=conversation&id=$1 [L]
+RewriteRule ^apropos.html$ apropos.php [L]
+RewriteRule ^devenir-partenaire.html$ devenir-partenaire.php [L]
+RewriteRule ^archives-news.html$ archives_news.php [L]
+RewriteRule ^archives-chroniques.html$ archives_chroniques.php [L]
+RewriteRule ^news-([0-9]+)\.html$  news.php?titre=$1  [L]
+RewriteRule ^news-([0-9]+)\-(([a-z]|-)*)\.html$   news.php?titre=$1  [L]
+RewriteRule ^retrospective-([0-9]+)\-(([a-z]|-)*)\.html$  retrospective.php?id=$1  [L]
+RewriteRule ^personnage-([0-9]+)\-(([a-z]|-)*)\.html$  personnage.php?id=$1  [L]
+RewriteRule ^lieu-([0-9]+)\-(([a-z]|-)*)\.html$  lieu.php?id=$1  [L]
+RewriteRule ^objet-([0-9]+)\-(([a-z]|-)*)\.html$  objet.php?id=$1  [L]
+RewriteRule ^game-([0-9]+)\-(([a-zA-Z0-9]|-)*)\.html$  game.php?id=$1  [L]
+RewriteRule ^test-game-([0-9]+)\-(([a-zA-Z0-9]|-)*)\.html$  tests.php?id=$1  [L]
+RewriteRule ^astuces-game-([0-9]+)\-(([a-zA-Z0-9]|-)*)\.html$  astuces.php?id=$1  [L]
+RewriteRule ^avis-game-([0-9]+)\-(([a-zA-Z0-9]|-)*)\.html$  avis.php?id=$1  [L]
+RewriteRule ^tenninews-([0-9]+)\-(([a-z]|-)*)\.html$  tenninews.php?titre=$1  [L]
+RewriteRule ^chronique-([0-9]+)\-(([a-z]|-)*)\.html$  news.php?titre=$1  [L]
+RewriteRule ^chronique-([0-9]+)\.html$  news.php?titre=$1  [L]
+RewriteRule ^topic-([0-9]+)\-([0-9]+)\.html$  voirtopic.php?t=$1&page=$2  [L]
+RedirectPermanent /topic-([0-9]+)\-([0-9]+)\.html /topic-([0-9]+)\-([0-9]+)\-(([a-z]|-)*)\.html
+RewriteRule ^topic-([0-9]+)\-([0-9]+)\-(([a-z]|-)*)\.html$  voirtopic.php?t=$1&page=$2  [L]
+RewriteRule ^forum-([0-9]+)\.html$  voirforum.php?f=$1  [L]
+RewriteRule ^forum-([0-9]+)\-(([a-z]|-)*)\.html$  voirforum.php?f=$1  [L]
+RewriteRule ^forum-([0-9]+)\-([0-9]+)\.html$  voirforum.php?f=$1&page=$2  [L]
+RewriteRule ^forum-([0-9]+)\-([0-9]+)\-(([a-z]|-)*)\.html$  voirforum.php?f=$1&page=$2  [L]
+RewriteRule ^profil-([0-9]+)\.html$ voirprofil.php?m=$1
+RewriteRule ^profil-amis-([0-9]+)\.html$ profil-amis.php?m=$1
+RewriteRule ^profil-badges-([0-9]+)\.html$ profil-badges.php?m=$1
+RewriteRule ^profil-collection-([0-9]+)\.html$ profil-collection.php?m=$1
+RewriteRule ^profil-topics-([0-9]+)\.html$ profil-topics.php?m=$1
+RewriteRule ^don-champi-([0-9]+)\.html$ don-champi.php?id=$1
+RewriteRule ^envoi-mp-dest([0-9]+)\.html$ mp.php?action=repondre&dest=$1
+RewriteRule ^consulter-mp-([0-9]+)\.html$ mp.php?action=consulter&id=$1
+RewriteRule ^membres-([0-9]+)\.html$ membres.php?page=$1 [L]
+RewriteRule ^publi-([0-9]+)\.html$ publi.php?id=$1 [L]
+RewriteRule ^action/follow-topic-([0-9]+)\.html$ action/follow-topic.php?t=$1 [L]
+RewriteRule ^action/unfollow-topic-([0-9]+)\.html$ action/unfollow-topic.php?t=$1 [L]
+RewriteRule ^card-([0-9]+)\-(([a-z]|-)*)\.png$   PTCard.php?id=$1  [L]
+ErrorDocument 404 /erreur_404.html
+ErrorDocument 403 /erreur_403.html
+
+##Extensions
+<IfModule mod_mime.c>
+AddType image/x-icon .ico
+AddType application/x-font-woff .woff
+AddType application/x-font-woff2 .woff2
+AddType application/vnd.ms-fontobject .eot
+AddType application/x-font-ttf .ttf
+AddType application/x-font-opentype .otf
+AddType image/svg+xml .svg
+</IfModule>
+
+## contrôle du cache navigateur
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault "access plus 7200 seconds"
+ExpiresByType image/jpg "access plus 2592000 seconds"
+ExpiresByType image/jpeg "access plus 2592000 seconds"
+ExpiresByType image/png "access plus 2592000 seconds"
+ExpiresByType image/gif "access plus 2592000 seconds"
+ExpiresByType image/ico "access plus 2592000 seconds"
+ExpiresByType image/icon "access plus 2592000 seconds"
+ExpiresByType image/x-icon "access plus 2592000 seconds"
+ExpiresByType text/css "access plus 2592000 seconds"
+ExpiresByType text/javascript "access plus 2592000 seconds"
+ExpiresByType text/html "access plus 7200 seconds"
+ExpiresByType application/xhtml+xml "access plus 7200 seconds"
+ExpiresByType application/javascript A259200
+ExpiresByType text/x-javascript "access plus 1 month"
+ExpiresByType application/x-javascript "access plus 2592000 seconds"
+ExpiresByType application/x-font-woff "access plus 1 year"
+ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+ExpiresByType application/x-font-ttf "access plus 1 year"
+ExpiresByType application/x-font-opentype "access plus 1 year"
+ExpiresByType image/svg+xml "access plus 1 month"
+</IfModule>
+
+<IfModule mod_headers.c>
+<FilesMatch ".(ico|jpe?g|png|gif|css|js|gz|svg|woff)$">
+Header set Cache-Control "max-age=2592000, public"
+</FilesMatch>
+
+<FilesMatch "\\.(css)$">
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+
+<FilesMatch "\\.(js)$">
+Header set Cache-Control "max-age=216000, public"
+</FilesMatch>
+
+<FilesMatch "\\.(x?html?|php)$">
+Header set Cache-Control "max-age=600, public, must-revalidate"
+</FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+# compress text, html, javascript, css, xml:
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE image/x-icon image/svg+xml
+
+<files *.html>
+SetOutputFilter DEFLATE
+</files>
+
+SetOutputFilter DEFLATE
+AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript application/x-httpd-php
+</IfModule>
+
+<ifModule mod_gzip.c>
+mod_gzip_on Yes
+mod_gzip_dechunk Yes
+mod_gzip_item_include file \.(html?|txt|css|js|php|pl)$
+mod_gzip_item_include handler ^cgi-script$
+mod_gzip_item_include mime ^text/.*
+mod_gzip_item_include mime ^application/x-javascript.*
+mod_gzip_item_exclude mime ^image/.*
+mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</ifModule>
+Options -Indexes
+order allow,deny
+allow from all
+deny from 185.81.156
+deny from 91.134.174.20
+deny from 46.105.165.31

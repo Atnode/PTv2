@@ -1,0 +1,19 @@
+h2{font-size:18px;color:#ff0000;font-weight:bold;height:21.2px;margin-left:5px}
+footer{width:100%;color:#fff;text-align:center;border-top:3px solid #ff0000;background:url(//images.planete-toad.fr/IMGFooter.png) #961a1a}
+.mdl-layout__header{background:url(//images.planete-toad.fr/IMGFooter.png) #bf2626}
+.boutonconnexion{background-color:#2196f3!important}
+.footerText{background:rgba(222,200,200,0.5);text-shadow:1px 1px 2px rgba(0,0,0,0.3);padding:5px}
+.mdl-button--raised.mdl-button--colored{background:#bf2626}
+.content-mpme{background:#C74242!important}
+.forumNonLu{color:#e80000!important}
+.pageActive{color:red!important}
+.pagination{list-style:none;display:inline-block;padding:0;margin-top:10px}
+.pagination li{display:inline;text-align:center}
+.pagination a{float:left;display:block;font-size:14px;text-decoration:none;padding:5px 12px;color:#fff;margin-left:-1px;border:1px solid transparent;line-height:1.5}
+.pagination a.active{cursor:default}
+.pagination a:active{outline:none}
+.modal-4 a{margin:0 5px;padding:0;width:30px;height:30px;line-height:30px;border-radius:100%;background-color:#ff2121;color:white!important}
+.modal-4 a.prev{border-radius:50px 0 0 50px;width:100px}
+.modal-4 a.next{border-radius:0 50px 50px 0;width:100px}
+.modal-4 a:hover{background-color:#a51a1a}
+.modal-4 a.active,.modal-4 a:active{background-color:#a51a1a}

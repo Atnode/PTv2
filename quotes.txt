@@ -1,0 +1,6 @@
+﻿Et si tu allais lire les dernières news ?
+Et si tu allais faire un petit tour sur <a href="/forum.html">le forum</a> ?
+Essaie <a href="/musee_jeux.html"> les jeux du site !</a>
+Tu peux aller écouter de la musique dans la <a href="/musee_music.html">Juke Box</a> !
+Pourquoi tu n'irais pas laisser un message dans <a href="/livreor.html">le livre d'or</a> ?
+Tu peux aller lire ou regarder <a href="/musee_chronique.html">les chroniques</a> !

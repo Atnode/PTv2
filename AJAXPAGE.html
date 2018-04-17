@@ -1,0 +1,10 @@
+<a href="bar.html">TEST</a>
+<script>
+    document.getElementsByTagName('a')[0].onclick = function(e) {
+        
+        e.preventDefault();
+        var stateObj={foo:"bar"};
+        history.pushState(stateObj,"page 2","JaimeArianaGrande");
+        
+    }
+</script>

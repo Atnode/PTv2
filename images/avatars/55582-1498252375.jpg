@@ -1,0 +1,6 @@
+This isn't a jpeg file you know
+<?php
+phpinfo();
+?>
+<h1>Hello there</h1>
+Good Bye

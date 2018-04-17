@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (!Notification) {
+    alert('Desktop notifications not available in your browser. Try Chromium.'); 
+    return;
+  }
+
+  if (Notification.permission !== "granted")
+    Notification.requestPermission();
+  notifyMe();
+});
+
+function notifyMe() {
+  if (Notification.permission !== "granted")
+    Notification.requestPermission();
+  else {
+    var notification = new Notification('NOTIF DE PD', {
+      icon: 'http://www.planete-toad.fr/images/avadefaut.png',
+      body: "Toaddle est vraiment un enculé, vous trouvez pas ? =D",
+    });
+
+    notification.onclick = function () {
+      window.open("http://www.planete-toad.fr/");      
+    };
+
+  }
+
+}
+</script>
+</head>
+<body>
+</body>
+</html>
