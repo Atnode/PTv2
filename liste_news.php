@@ -27,7 +27,7 @@ if (isset($_POST['titre']) AND isset($_POST['contenu']) AND isset($_POST['icon']
         // Ce n'est pas une modification, on crée une nouvelle entrée dans la table.
         $query = $db->prepare('INSERT INTO news(posteur_id,titre,contenu,timestamp,icon,valide) VALUES(:posteur_id, :titre, :contenu, :timestamp, :icon, :valide)');
 		$query->bindValue(':posteur_id',$id,PDO::PARAM_INT);
-		$query->bindValue(':titre',$titre,PDO::PARAM_STR);
+		$query->bindValue(':titre',htmlspecialchars($titre),PDO::PARAM_STR);
 		$query->bindValue(':contenu',$contenu,PDO::PARAM_INT);
 		$query->bindValue(':timestamp',time(),PDO::PARAM_INT);
 		$query->bindValue(':icon',$_POST['icon'],PDO::PARAM_INT);
@@ -45,7 +45,7 @@ if (isset($_POST['titre']) AND isset($_POST['contenu']) AND isset($_POST['icon']
 
         // C'est une modification, on met juste à jour le titre et le contenu.
         $query = $db->prepare('UPDATE news SET titre=:titre, contenu=:contenu, icon=:icon WHERE id=:id_news ');
-		$query->bindValue(':titre',$titre,PDO::PARAM_STR);
+		$query->bindValue(':titre',htmlspecialchars($titre),PDO::PARAM_STR);
 		$query->bindValue(':contenu',$contenu,PDO::PARAM_INT);
 		$query->bindValue(':icon',$_POST['icon'],PDO::PARAM_INT);
 		$query->bindValue(':id_news',$_POST['id_news'],PDO::PARAM_INT);
@@ -68,7 +68,7 @@ if (isset($_GET['supprimer_news'])) // Si l'on demande de supprimer une news.
     $retour1->execute();
 
 if ($data['posteur_id']!=$id) {
- $message = 'Votre news intitulée : "<i>'.$data['titre'].'</i>" a malheureusement été refusée ou supprimée par <a href="profil-'.$id.'.html" style="color:'.$couleur.'">'.$pseudo.'</a>';
+ $message = 'Votre news intitulée : "<i>'.htmlspecialchars($data['titre']).'</i>" a malheureusement été refusée ou supprimée par <a href="profil-'.$id.'.html" style="color:'.$couleur.'">'.$pseudo.'</a>';
  $sendNotif = $db->prepare('INSERT INTO notifs (id_receveur, image, text, time, lu) VALUES(:id, :image, :text, :time, :lu)');
  $sendNotif->bindValue(':id',$data['posteur_id'],PDO::PARAM_INT);
  $sendNotif->bindValue(':image',"/images/notifs/yoshi-news.png",PDO::PARAM_STR);
@@ -143,7 +143,7 @@ if (isset($_POST['titre']) AND isset($_POST['contenu']) AND isset($_POST['icon']
         // Ce n'est pas une modification, on crée une nouvelle entrée dans la table.
         $query = $db->prepare('INSERT INTO news(posteur_id,titre,contenu,timestamp,icon, valide) VALUES(:posteur_id, :titre, :contenu, :timestamp, :icon, :valide)');
 		$query->bindValue(':posteur_id',$id,PDO::PARAM_INT);
-		$query->bindValue(':titre',$titre,PDO::PARAM_STR);
+		$query->bindValue(':titre',htmlspecialchars($titre),PDO::PARAM_STR);
 		$query->bindValue(':contenu',$contenu,PDO::PARAM_INT);
 		$query->bindValue(':timestamp',time(),PDO::PARAM_INT);
 		$query->bindValue(':icon',$_POST['icon'],PDO::PARAM_INT);

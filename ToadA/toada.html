@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #000000;
+            overflow: hidden;
+		}
+        #canvasArea {
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+        }
+
+        
+	</style>
+    <!-- Libs and GDJS core files : -->
+		<script src="libs/pixi.js"></script>
+	<script src="libs/jshashtable.js"></script>
+	<script src="gd.js"></script>
+	<script src="libs/hshg.js"></script>
+	<script src="commontools.js"></script>
+	<script src="runtimeobject.js"></script>
+	<script src="runtimescene.js"></script>
+	<script src="polygon.js"></script>
+	<script src="force.js"></script>
+	<script src="layer.js"></script>
+	<script src="timer.js"></script>
+	<script src="imagemanager.js"></script>
+	<script src="runtimegame.js"></script>
+	<script src="variable.js"></script>
+	<script src="variablescontainer.js"></script>
+	<script src="eventscontext.js"></script>
+	<script src="runtimeautomatism.js"></script>
+	<script src="spriteruntimeobject.js"></script>
+	<script src="soundmanager.js"></script>
+	<script src="runtimescenetools.js"></script>
+	<script src="inputtools.js"></script>
+	<script src="objecttools.js"></script>
+	<script src="cameratools.js"></script>
+	<script src="soundtools.js"></script>
+	<script src="storagetools.js"></script>
+	<script src="stringtools.js"></script>
+	<script src="windowtools.js"></script>
+	<script src="Extensions/TextObject/textruntimeobject.js"></script>
+	<script src="code0.js"></script>
+	<script src="Extensions/PhysicsAutomatism/box2djs/box2d.js"></script>
+	<script src="Extensions/PhysicsAutomatism/physicsruntimeautomatism.js"></script>
+	<script src="code1.js"></script>
+	<script src="data.js"></script>
+
+
+</head>
+<body>
+    <div id="canvasArea"></div>
+
+    
+	<script>
+
+    (function() {
+        //Initialization
+        gdjs.registerObjects();
+        gdjs.registerAutomatisms();
+        gdjs.registerGlobalCallbacks();
+
+        var game = new gdjs.RuntimeGame(gdjs.projectData.Project, {});
+
+        //Create a renderer
+        var canvasArea = document.getElementById("canvasArea");
+        game.createStandardCanvas(canvasArea);
+
+        //Bind keyboards/mouse/touch events
+        game.bindStandardEvents(window, document);
+
+        //Load all assets and start the game
+        game.loadAllAssets(onAssetsLoaded);
+        function onAssetsLoaded() {
+            game.startStandardGameLoop();
+        }
+    })();
+
+	</script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 
 <?php
 	$membre = isset($_GET['m'])?(int) $_GET['m']:'';
-	include("../experience.php?m=".$membre."");
+	include("../experience.php");
 	//On récupère les infos du profil à voir
 	$query=$db->prepare('SELECT * FROM forum_membres WHERE membre_id=:membre');
 	$query->bindValue(':membre',$membre, PDO::PARAM_INT);
@@ -44,13 +44,6 @@
 		</style>';
 		} else {
         echo'<img src="images/banniere/banniere-defaut.jpg" alt="Image de couverture" />';
-		}
-		if ($membre==2) {
-			echo'<center><div style="
-    font-size: 10px;
-    z-index: 9999999999999999;
-    position: absolute;
-">JE VEUX ETRE OWN DU DISCORD</div></center>';
 		}
 		echo'</div>
 

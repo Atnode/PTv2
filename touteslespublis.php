@@ -23,7 +23,7 @@ if ($id!=0) {
      include("code.php");
      echo'<td><textarea name="publier" rows="6" cols="60" id="message" placeholder="Publier un p\'tit message..."></textarea><br>
      <input type="submit" name="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" value="Envoyer" /></form></td></tr></tbody></table></div><br><hr /><br>'; }
-    $query=$db->prepare('SELECT * FROM publications LEFT JOIN forum_membres ON forum_membres.membre_id = publications.id_receveur WHERE officielle <> 1 ORDER BY timestamp DESC LIMIT 85'); // On sélectionne les publications
+    $query=$db->prepare('SELECT * FROM publications LEFT JOIN forum_membres ON forum_membres.membre_id = publications.id_receveur WHERE officielle <> 1 ORDER BY timestamp DESC LIMIT 75'); // On sélectionne les publications
     $query->execute();
     while ($data = $query->fetch()) {
 $publi = $data['id'];

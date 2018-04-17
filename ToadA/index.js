@@ -1,0 +1,1 @@
+!function(){function t(){a.startStandardGameLoop()}gdjs.registerObjects(),gdjs.registerAutomatisms(),gdjs.registerGlobalCallbacks();var a=new gdjs.RuntimeGame(gdjs.projectData.Project,{}),e=document.getElementById("canvasArea");a.createStandardCanvas(e),a.bindStandardEvents(window,document),a.loadAllAssets(t)}();

@@ -1,4 +1,5 @@
-<?php
+﻿<?php
+$membreBirthday = "";
 
 if ($lvl>1) { //ACtu page récente
 $query=$db->prepare('UPDATE forum_membres SET membre_pageactuelle = '.$titre.'  WHERE membre_id = :id');
@@ -138,11 +139,11 @@ $birthday->closeCursor();
     <div class="mdl-mega-footer__drop-down-section">
       <h4 class="mdl-mega-footer__heading">NOS PARTENAIRES</h4>
       <div class="mdl-mega-footer__link-list">
-<a href="http://smbxcity.forumactif.org/" rel="nofollow" title="SMBX City" target="_blank"><img src="//images.planete-toad.fr/partenaires/SMBXCITY.png" alt="SMBX City Site partneiare" title="SMBX City site partenaire" width="88" height="31" /></a>
-<a href="http://timsiteweb.free.fr/mkpc/index.php" rel="nofollow" title="Mario Kart PC" target="_blank"><img src="//images.planete-toad.fr/partenaires/mkpc.png" alt="Mario Kart PC Site Partenaire" title="Mario Kart PC site partenaire" width="88" height="31" /></a>
-<a href="http://www.vanilladome.fr/" rel="nofollow" title="Vanilla Dome" target="_blank"><img src="//images.planete-toad.fr/partenaires/vdpartenaire.png" alt="Vanilla Dome" title="Vanilla Dome" width="88" height="31" /></a>
-<a href="https://pokekalos.fr/" rel="nofollow" title="PokeKalos" target="_blank"><img src="//images.planete-toad.fr/partenaires/pokekalos.png" alt="Pokekalos" title="Vanilla Dome" width="88" height="31" /></a><br>
-<p class="footerText">&copy; Planète Toad 2014-<?php echo date('Y') ?>. Site crée et codé entièrement par Champoad et Toaddle.<br> Toute reproduction partielle ou complète est strictement interdite.</p><br>
+<a href="http://smbxcity.forumactif.org/" rel="nofollow" title="SMBX City" target="_blank"><img src="../images/partenaires/SMBXCITY.png" alt="SMBX City Site partneiare" title="SMBX City site partenaire" width="88" height="31" /></a>
+<a href="http://timsiteweb.free.fr/mkpc/index.php" rel="nofollow" title="Mario Kart PC" target="_blank"><img src="../images/partenaires/mkpc.png" alt="Mario Kart PC Site Partenaire" title="Mario Kart PC site partenaire" width="88" height="31" /></a>
+<a href="http://www.vanilladome.fr/" rel="nofollow" title="Vanilla Dome" target="_blank"><img src="../images/partenaires/vdpartenaire.png" alt="Vanilla Dome" title="Vanilla Dome" width="88" height="31" /></a>
+<a href="https://pokekalos.fr/" rel="nofollow" title="PokeKalos" target="_blank"><img src="../images/partenaires/pokekalos.png" alt="Pokekalos" title="Vanilla Dome" width="88" height="31" /></a><br>
+<p class="footerText">&copy; Planète Toad 2014-<?php echo date('Y') ?>. Site crée et codé entièrement par Champoad et Toaddle.<br> Toute reproduction partielle ou complète est strictement interdite.<br>Hébergement fourni par <a href="http://outout.xyz">@outout</a> <3</p>
       </div>
     </div>
 
@@ -186,10 +187,10 @@ echo'<a href="/quiestenligne.php" style="color:white;">Qui est en ligne détaill
 $balises=(isset($balises))?$balises:0;
 if($balises) {
 ?>
-<script src="//js.planete-toad.fr/bbcode.js" async defer></script>
+<script src="/js/bbcode.js" async defer></script>
 <?php
 } ?>
 <a href="#" title="Haut de page" class="scrollup"><i class="fa fa-arrow-up"></i></a>
-<script src="//js.planete-toad.fr/material.min.js" async defer></script>
+<script src="/js/material.min.js" async defer></script>
 </main></div></body>
 </html>

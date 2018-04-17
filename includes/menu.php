@@ -1,5 +1,5 @@
 <?php
-if ($id!=0) { ?> <script src="/actualbar.js" async></script> <?php }
+if ($id!=0) { ?> <script src="../actualbar.js" async></script> <?php }
 echo'<header class="mdl-layout__header" id="bardefil">
     <div class="mdl-layout__header-row">
       <div class="mdl-layout--large-screen-only"><span class="mdl-layout-title">Planète Toad</span></div>
@@ -23,8 +23,11 @@ session_destroy();
 }
 
 echo'<span style="float:right;"><a class="mdl-navigation__link" href="/profil-'.$data['membre_id'].'.html"><img src="'.$data['membre_avatar'].'" alt="avamembre" class="avabarre" /></a></span>
-<div class="mdl-layout--large-screen-only"><span style="float:right;"><a class="mdl-navigation__link" href="/profil-'.$data['membre_id'].'.html" style="line-height:38px;text-shadow:none;"><b><span style="color:'.$data['membre_couleur'].';">'.$data['membre_pseudo'].'</span></b></a></span></div>
-<div id="Barr">';
+<div class="mdl-layout--large-screen-only"><span style="float:right;"><a class="mdl-navigation__link" href="/profil-'.$data['membre_id'].'.html" style="line-height:38px;text-shadow:none;"><b><span style="color:'.$data['membre_couleur'].';">'.$data['membre_pseudo'].'</span></b></a></span></div>';
+
+if ($id=="115") {
+echo'<span style="float:right;"><a class="mdl-navigation__link" href="/modifierprofil.html" title="Modifier le profil" style="color:white;line-height:38px;"><i class="material-icons">&#xE8B8;</i></a></span>'; }
+echo'<div id="Barr">';
     //MP
     $query=$db->prepare('SELECT COUNT(*) FROM mp_texte WHERE id_receveur = :id AND lu = :non');
     $query->bindValue(':id',$id,PDO::PARAM_INT);

@@ -45,6 +45,9 @@ session_destroy();
 session_destroy();
 }
 
+
+
+
 if ($id!=0) {
 $ip = $_SERVER['REMOTE_ADDR'];
 $useragent = $_SERVER['HTTP_USER_AGENT'];

@@ -19,7 +19,7 @@ while ($data1 = $query->fetch()) {
 }
 //
 echo'<hr><h2>Administrateurs</h2><br>
-<p style="text-align:center;font-style:italic;">Les Administrateurs sont chargés d\'assister les Webmasters. Entres autres, ils gèrent le site et développent de nouvelles fonctionnalités</p><br><br>';
+<p style="text-align:center;font-style:italic;">Les Administrateurs sont chargés d\'assister les Webmasters. Entres autres, ils gèrent le site et développe de nouvelles fonctionnalités</p><br><br>';
 $query = $db->prepare('SELECT * FROM forum_membres WHERE rang = "Administrateur"');
 $query->execute();
 while ($data1 = $query->fetch()) {

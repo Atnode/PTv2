@@ -1,16 +1,9 @@
-AuthName "LudaWeb01 est en vie, vous ne pouvez pas entrer sinon vous serez mordue"
-AuthType Basic
-AuthUserFile "/home/pt/www-dev/.htpasswd"
-Require valid-user
-
 Options +MultiViews
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^noces.polux.info$
-RewriteRule ^(.*) http://www.planete-toad.fr/$1 [QSA,L,R=301]
 RewriteCond %{HTTP_HOST} ^planete-toad.fr$
-RewriteRule ^(.*) http://www.planete-toad.fr/$1 [QSA,L,R=301]
-RewriteCond %{HTTP_HOST} ^149.91.83.208$
-RewriteRule ^(.*) http://www.planete-toad.fr/$1 [QSA,L,R=301]
+RewriteRule ^(.*) https://www.planete-toad.fr/$1 [QSA,L,R=301]
+RewriteCond %{HTTP_HOST} ^https://planete-toad.fr$
+RewriteRule ^(.*) https://www.planete-toad.fr/$1 [QSA,L,R=301]
 RewriteRule ^erreur_404.html$ erreur.php?error=404 [L]
 RewriteRule ^erreur_403.html$ erreur.php?error=403 [L]
 RewriteRule ^index.html$ index.php [L]
@@ -100,6 +93,10 @@ RewriteRule ^publi-([0-9]+)\.html$ publi.php?id=$1 [L]
 RewriteRule ^action/follow-topic-([0-9]+)\.html$ action/follow-topic.php?t=$1 [L]
 RewriteRule ^action/unfollow-topic-([0-9]+)\.html$ action/unfollow-topic.php?t=$1 [L]
 RewriteRule ^card-([0-9]+)\-(([a-z]|-)*)\.png$   PTCard.php?id=$1  [L]
+RewriteRule ^card-([0-9]+)\-(([a-z]|-)*)\.jpg$   PTCard.php?id=$1  [L]
+ErrorDocument 404 /erreur_404.html
+ErrorDocument 403 /erreur_403.html
+
 ErrorDocument 404 /erreur_404.html
 ErrorDocument 403 /erreur_403.html
 
@@ -114,7 +111,7 @@ AddType application/x-font-opentype .otf
 AddType image/svg+xml .svg
 </IfModule>
 
-## contrÃ´le du cache navigateur
+## contrôle du cache navigateur
 <IfModule mod_expires.c>
 ExpiresActive On
 ExpiresDefault "access plus 7200 seconds"
@@ -189,8 +186,3 @@ mod_gzip_item_exclude mime ^image/.*
 mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
 </ifModule>
 Options -Indexes
-order allow,deny
-allow from all
-deny from 185.81.156
-deny from 91.134.174.20
-deny from 46.105.165.31

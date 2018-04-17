@@ -1,0 +1,23 @@
+h2{font-size:18px;color:#00b7ff;font-weight:bold;height:21.2px;margin-left:5px}
+footer{width:100%;color:#fff;text-align:center;background:url(IMGFooter.jpg) #949590;border-top:3px solid #60605D}
+.mdl-layout__header{background-image:url(IMGFooter.jpg);}
+/*.mdl-layout__header{background-image:url(mario.png); background-position:right; background-repeat:no-repeat;}*/
+.boutonconnexion{background-color:#c33925!important}
+.footerText{background:rgba(222,200,200,0.5);text-shadow:1px 1px 2px rgba(0,0,0,0.3);padding:5px}
+.mdl-button--raised.mdl-button--colored{background:#949590}
+.content-mpme{background:#C74242!important}
+.forumNonLu{color:#e80000!important}
+.pageActive{color:#7F7F7F!important}
+.pagination{list-style:none;display:inline-block;padding:0;margin-top:10px}
+.pagination li{display:inline;text-align:center}
+.pagination a{float:left;display:block;font-size:14px;text-decoration:none;padding:5px 12px;color:#fff;margin-left:-1px;border:1px solid transparent;line-height:1.5;}
+.pagination a.active{cursor:default}
+.pagination a:active{outline:none}
+.modal-4 a{margin:0 5px;padding:0;width:30px;height:30px;line-height:30px;border-radius:100%;background-color:#ff2121;color:white!important;}
+.modal-4 a.prev{border-radius:50px 0 0 50px;width:100px;}
+.modal-4 a.next{border-radius:0 50px 50px 0;width:100px;}
+.modal-4 a:hover{background-color:#a51a1a;}
+.modal-4 a.active,.modal-4 a:active{background-color:#a51a1a;}
+h1{font-size:20px;color:gray;margin-bottom:10px;background-image:url(mario.png);background-repeat:no-repeat;text-indent:28px;background-position:0 2px;margin-left:2px}
+
+body{background-attachment:fixed;background-repeat:repeat;background-image:url(bg-odyssey.jpg);background-position:center; background-size:cover;}

@@ -1,6 +1,6 @@
 h2{font-size:18px;color:#00b7ff;font-weight:bold;height:21.2px;margin-left:5px}
-footer{width:100%;color:#fff;text-align:center;background:url(IMGFooter.jpg) #949590;border-top:3px solid #60605D}
-.mdl-layout__header{background-image:url(IMGFooter.jpg);}
+footer{width:100%;color:#fff;text-align:center; background:url(images.planete-toad.fr/IMGFooter.jpg) #949590;border-top:3px solid #60605D}
+.mdl-layout__header{background-image:url(images.planete-toad.fr/IMGFooter.jpg);}
 /*.mdl-layout__header{background-image:url(mario.png); background-position:right; background-repeat:no-repeat;}*/
 .boutonconnexion{background-color:#c33925!important}
 .footerText{background:rgba(222,200,200,0.5);text-shadow:1px 1px 2px rgba(0,0,0,0.3);padding:5px}

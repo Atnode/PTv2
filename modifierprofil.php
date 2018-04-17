@@ -3,6 +3,8 @@ session_start();
 $titre="Planète Toad &bull; Modification de votre profil";
 include("includes/identifiants.php");
 include("includes/debut.php");
+if ($lvl<2) {header('Location: erreur_403.html'); 
+exit();}
 if ($id==0) header('Location: connexion.html'); 
 include("includes/menu.php");
 $membre = isset($_GET['m'])?(int) $_GET['m']:'';
@@ -306,7 +308,7 @@ if ($handle)
         {
                 $query=$db->prepare('UPDATE forum_membres SET membre_avatar= :ava WHERE membre_id = :id');
                 $query->bindValue(':id',$id,PDO::PARAM_INT);
-                $query->bindValue(':ava',"//avatars.planete-toad.fr/avadefaut.png",PDO::PARAM_STR);
+                $query->bindValue(':ava',"/images/avatars/avadefaut.png",PDO::PARAM_STR);
                 $query->execute();
                 $query->closeCursor();
         }

@@ -12,11 +12,13 @@ $error = isset($_GET['error'])?htmlspecialchars($_GET['error']):'';
 switch($error)
 {
 case "404":
+header("Location: /erreur_404.html");
 echo'
 <p align=center style="font-size:16px; color:red; font-weight:bold;"><img src="/images/404.png" alt="404" align=center title="Page non trouvée" />
 Cette page n\'a pas été trouvée. Vous pouvez <a onclick="javascript:history.back();" style="color:black; cursor:pointer;">retourner en arrière</a> ou <a href="./" style="color:black;">retourner à l\'accueil.</a>';
 break;
 case "403":
+header("Location: /erreur_403.html");
 echo'
 <p align=center style="font-size:16px; color:red; font-weight:bold;">Page indisponible ou introuvable. Vous pouvez <a onclick="javascript:history.back();" style="color:black;">retourner en arrière</a> ou <a href="./" style="color:black;">retourner à l\'accueil.</a>';
 break;

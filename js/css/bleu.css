@@ -1,6 +1,8 @@
 h2{font-size:18px;color:#00b7ff;font-weight:bold;height:21.2px;margin-left:5px}
-footer{width:100%;color:#fff;text-align:center;background:url(//images.planete-toad.fr/IMGFooter.png) #0089ff;border-top:3px solid #0063c7}
-.mdl-layout__header{background:url(//images.planete-toad.fr/IMGFooter.png) #008EFF}
+footer{width:100%;color:#fff;text-align:center;background:url(/images/IMGFooter.png) #0089ff;border-top:3px solid #0063c7}
+.beforeFooter{background-color:#2969b0;padding:15px;text-align:center}
+.afterFooter{background-color:#2969b0;padding:15px;color:white}
+.mdl-layout__header{background:url(/images/IMGFooter.png) #008EFF}
 .boutonconnexion{background-color:#c33925!important}
 .footerText{background:rgba(222,200,200,0.5);text-shadow:1px 1px 2px rgba(0,0,0,0.3);padding:5px}
 .mdl-button--raised.mdl-button--colored{background-color:#2196f3}

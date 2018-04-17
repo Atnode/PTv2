@@ -20,6 +20,7 @@ echo'<link rel="stylesheet" href="modo.css" type="text/css" />
 <p><a href="./sujet_verr.php" style="background-color:#2980b9;margin-left:1%;" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"><i class="material-icons md-18">lock_outline</i>Sujets vérouillés</a></p>
 <p><a href="../archives_chat.php" style="background-color:#2980b9;margin-left:1%;" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"><i class="material-icons md-18">message</i>Archives du chat</a></p>
 <p><a href="./speak-astro.php"" style="background-color:#2980b9;margin-left:1%;" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"><i class="material-icons md-18">send</i>Parler en tant qu\'AstroToad</a></p>
-<p><a href="./clear-chat.php"" style="background-color:#2980b9;margin-left:1%;" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"><i class="material-icons md-18">mode_comment</i>Clear le chat</a></p></div>';
+<p><a href="./clear-chat.php"" style="background-color:#2980b9;margin-left:1%;" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"><i class="material-icons md-18">mode_comment</i>Clear le chat</a></p>
+<p><a href="./crypt-mdp.php"" style="background-color:#2980b9;margin-left:1%;" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"><i class="material-icons md-18">mode_comment</i>Crypter un mot de passe</a></p></div>';
 include("../includes/fin.php");
 ?>

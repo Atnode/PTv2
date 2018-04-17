@@ -11,8 +11,8 @@ include("includes/menu.php");
 <h1>Contact</h1>
 
 <p>En cas de perte de mot de passe, de problème ou de question, vous pouvez contacter l'équipe à l'adresse : <b>planetetoad[at]gmail.com</b><br/>
-<em>En cas de perte de mot de passe, je vous enverrai un nouveau mot de passe. Attention, je vous donnerai un mot de passe seulement sur l'adresse e-mail que vous avez utilisée pour le site.</em></p>
+<em>En cas de perte de mot de passe, LudaWeb01 vous en enverra un nouveau par MP sur le site.</em></p>
 
 <?php
-include("includes/fin.php");
+include("includes/fin2.php");
 ?>

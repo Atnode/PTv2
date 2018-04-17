@@ -227,8 +227,8 @@
 #wowslider-container1 a.ws_next,
 #wowslider-container1 a.ws_prev {
 	font: 3.5em "ws-ctrl-material";
-	width: 1.6em;
-	height: 1.6em;
+	width: 36px;
+	height: 36px;
 	margin-top:-0.8em;
 }
 #wowslider-container1 a.ws_next,
@@ -313,7 +313,7 @@ _:-ms-input-placeholder, :root #wowslider-container1 .ws_playpause:after {line-h
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 	color:#fff;
 	padding: 1em;
-	bottom: 40px;
+	bottom: 20px;
 	top: auto;
 	opacity: 1;
 }

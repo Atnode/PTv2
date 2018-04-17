@@ -30,6 +30,7 @@ $extension_avatar = strtolower(substr(  strrchr($avatar, '.')  ,1));
 $width = 60;
 $height = 60;
 
+echo $extension_avatar;
 // Content type
 if ($extension_avatar=="png") {
 header('Content-Type: image/png');

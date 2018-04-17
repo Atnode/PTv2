@@ -6,6 +6,7 @@ $lvl=(isset($_SESSION['level']))?(int) $_SESSION['level']:1;
 $admin = 1;
 include("../includes/identifiants.php");
 include("../includes/debut.php");
+if ($lvl<4) header('Location: ../erreur_403.html'); 
 include("../includes/menu.php");
 echo'<h1>Avertissements</h1>';
 $Liste = $db->prepare('SELECT * FROM forum_membres ORDER BY avertissement DESC');

@@ -1,0 +1,7 @@
+AuthUserFile /var/www/vhosts/planete-toad.fr/httpdocs/modo/.htpasswd
+
+AuthName "Accès"
+
+AuthType Basic
+
+Require valid-user

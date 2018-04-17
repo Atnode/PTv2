@@ -5,6 +5,7 @@ $balises = true;
 $admin = 1;
 include("../includes/identifiants.php");
 include("../includes/debut.php");
+if ($lvl<4) header('Location: ../erreur_403.html'); 
 include("../includes/menu.php");
 echo'<h1>Vider le chat</h1>';
 if ($data['membre_id'] == 115 ) {

@@ -6,6 +6,9 @@ $reponse = $db->query('SELECT topic_titre FROM forum_topic WHERE topic_id=' . $t
 $donnees = $reponse->fetch();
 $titre =  '' . $donnees['topic_titre'] . '';
 $balises = true;
+$colorJ = 0;
+$choix_color = 0;
+$experience = 0;
 include("includes/debut.php");
 include("includes/bbcode.php");
 
@@ -110,7 +113,10 @@ $query->execute() or die(print_r($query->errorInfo()));
          //POUR CALCULER L'XP     
          $calcul1 = $rang['tchampi_max'] - $rang['tchampi_min'];
          $calcul2 = $data['champi_total'] - $rang['tchampi_min'];
-         $calcul3 = $calcul2 / $calcul1 * 100;
+         if ($calcul1==0)
+		 {$calcul3=0;}
+		else {
+	  $calcul3 = $calcul2 / $calcul1 * 100; }
          
          if ($calcul3<10) { $experience = substr($calcul3, 0, 1); } else { $experience = substr($calcul3, 0, 2); }
 
@@ -213,7 +219,7 @@ if ($data1['topic_locked'] == 0 AND $id!=0) // Topic non verrouillé !
 ?>
 <h2>Poster une réponse</h2>
 
-<form method="post" action="action/repondre-topic.php?t=<?php echo $topic ?>" name="formulaire">
+<form method="post" action="action/rrepondre-topic.php?t=<?php echo $topic ?>" name="formulaire">
 <div id="answer_topic" style="text-align:center;">
 <?php include("code.php") ?>
 <div style="margin-top:10px;"></div>

@@ -19,12 +19,12 @@ echo'<form method="post" action="./bannir.php">
 } else {
      $membre = $_POST['membre'];
 
-     $query=$db->prepare('SELECT membre_rang, membre_pseudo FROM forum_membres WHERE membre_id = '.$membre.'');
+     $query=$db->prepare('SELECT membre_rang FROM forum_membres WHERE membre_id = '.$membre.'');
      $query->execute();
-     $data2 = $query->fetch();
+     $data = $query->fetch();
 	 //On le ban
-	 if ($_POST['membre'] == 6 OR $_POST['membre'] == 2) {
-		 echo '<div style="border: 2px solid red; padding: 5px; border-radius: 5px;"><b><span style="font-size: 24px;">Vous ne pouvez pas bannir le président et son vice-président ! :hap:</span></b></div>';
+	 if ($data['membre_rang']>2) {
+		 echo '<div style="border: 2px solid red; padding: 5px; border-radius: 5px;"><b><span style="font-size: 24px;">Vous ne pouvez pas bannir les collaborateurs de Staline Android Champoad Chromtrast, MERCI !</span></b></div>';
 	 }
 	 else
 	 {
@@ -32,12 +32,6 @@ echo'<form method="post" action="./bannir.php">
 	 $query->bindValue(':membre',$membre,PDO::PARAM_INT);
 	 $query->execute();
 	 
-	  $notejournaladmin = 'L\'utilisateur '.$data['membre_pseudo'].' vient de bannir '.$data2['membre_pseudo'].' du site.';
-		
-        $query2 = $db->prepare('INSERT INTO journalmodo(date,note) VALUES(:date, :note)');
-		$query2->bindValue(':date',time(),PDO::PARAM_STR);
-		$query2->bindValue(':note',$notejournaladmin,PDO::PARAM_STR);
-		$query2->execute();
 	 echo'Membre banni.<br>
 	 <a href="#null" onclick="javascript:history.back();">- Retourner à la page précédente</a>';
 	 }

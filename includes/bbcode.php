@@ -1,119 +1,119 @@
 <?php
 function code($texte) {
-$texte = str_replace(':hap:', '<img src="//images.planete-toad.fr/smileys/hap.gif" title="Smiley hap" width="19" height="19" alt="Smiley hap" />', $texte);
-$texte = str_replace(':reddape:', '<img src="//images.planete-toad.fr/smileys/REDDAPE.gif" title="Smiley hap rouge" alt="Smiley hap rouge" />', $texte);
-$texte = str_replace(':noreddape:', '<img src="//images.planete-toad.fr/smileys/noreddape.gif" title="Smiley nohap rouge" alt="Smiley nohap rouge" />', $texte);
-$texte = str_replace(':a:', '<img src="//images.planete-toad.fr/smileys/a.gif" title="Awesome face" alt="Awesome face" />', $texte);
-$texte = str_replace('8D', '<img src="//images.planete-toad.fr/smileys/8D.png" width="19" height="19" title="8D" alt="8D" />', $texte);
-$texte = str_replace(':nohap:', '<img src="//images.planete-toad.fr/smileys/nohap.gif" title="No hap" alt="No hap" />', $texte);
-$texte = str_replace(':noel:', '<img src="//images.planete-toad.fr/smileys/noel.gif" title="Noël" alt="Noël" />', $texte);
-$texte = str_replace(':)', '<img src="//images.planete-toad.fr/smileys/smiley-content.png" width="16" height="16" title="Toad Content" alt="Toadd Content" />', $texte);
-$texte = str_replace(':D', '<img src="//images.planete-toad.fr/smileys/super-content.gif" title=" Toad super content" width="16" height="16" alt="Toad super content" />', $texte);
-$texte = str_replace(':|', '<img src="//images.planete-toad.fr/smileys/neutre.png" title="Toad Neutre" alt="Toad Neutre" />', $texte);
-$texte = str_replace(';)', '<img src="//images.planete-toad.fr/smileys/clin_d_oeil.gif" title="Toad clin d\'oeil " alt="Toad clin d\'\oeil" width="16" height="16" />', $texte);
-$texte = str_replace(':(', '<img src="//images.planete-toad.fr/smileys/pas_content.png" title="Toad pas content" alt=" Toad pas content" />', $texte);
-$texte = str_replace(':+:', '<img src="//images.planete-toad.fr/smileys/pouce_leve.png" title="Toad positif" alt="Toad positif" />', $texte);
-$texte = str_replace(':o', '<img src="//images.planete-toad.fr/smileys/surpris.png" title="surpris" alt="(surpris)" width="16" height="16" />', $texte);
-$texte = str_replace(';(', '<img src="//images.planete-toad.fr/smileys/triste.png" title="triste" alt="(triste)" />', $texte);
-$texte = str_replace(':p', '<img src="//images.planete-toad.fr/smileys/smiley-langue.png" title="langue" width="16" height="16" alt="(Smiley qui tire la langue)" />', $texte);
-$texte = str_replace(':dead:', '<img src="//images.planete-toad.fr/smileys/dead.png" title="dead" alt="(Smiley Mort)" />', $texte);
-$texte = str_replace(':rire:', '<img src="//images.planete-toad.fr/smileys/rire.gif" title="rire" alt="(Smiley qui rigole)" />', $texte);
-$texte = str_replace(':cool:', '<img src="//images.planete-toad.fr/smileys/cool.png" width="16" height="16" title="cool" alt="(Smiley cool)" />', $texte);
-$texte = str_replace(':-:', '<img src="//images.planete-toad.fr/smileys/pouce_baisse.png" title="nopouce" alt="(Pouce baissé)" />', $texte);
-$texte = str_replace('/gigahap/', '<img src="//images.planete-toad.fr/smileys/gigahap.gif" title="gigahap" alt="(Hap géant)" />', $texte);
-$texte = str_replace('/giganoel/', '<img src="//images.planete-toad.fr/smileys/giganoel.gif" title="giganoel" alt="(Noel géant)" />', $texte);
-$texte = str_replace(':toast:', '<img src="//images.planete-toad.fr/smileys/toast.png" title="toast" alt="(Toast)" />', $texte);
-$texte = str_replace(':+1:', '<img src="//images.planete-toad.fr/smileys/bulle_+1.png" title="+1" alt="(+1)" />', $texte);
-$texte = str_replace(':bref:', '<img src="//images.planete-toad.fr/smileys/bulle_bref.png" title="bref" alt="(Bref...)" />', $texte);
-$texte = str_replace(':vivept:', '<img src="//images.planete-toad.fr/smileys/bulle_PT.png" title="vivept" alt="(Vive Planète Toad !)" />', $texte);
-$texte = str_replace(':salut:', '<img src="//images.planete-toad.fr/smileys/bulle_salut.png" title="salut" alt="(Salut !)" />', $texte);
-$texte = str_replace(':toaddlegenial:', '<img src="//images.planete-toad.fr/smileys/bulle_toaddle.png" title="toaddlegenial" alt="(Toaddle est génial !)" />', $texte);
-$texte = str_replace(':tusors:', '<img src="//images.planete-toad.fr/smileys/bulle_tu_sors.png" title="tusors" alt="(Tu sors !)" />', $texte);
-$texte = str_replace(':zut:', '<img src="//images.planete-toad.fr/smileys/bulle_zut.png" title="zut" alt="(Zut !)" />', $texte);
+$texte = str_replace(':hap:', '<img src="/images/smileys/hap.gif" title="Smiley hap" width="19" height="19" alt="Smiley hap" />', $texte);
+$texte = str_replace(':reddape:', '<img src="/images/smileys/REDDAPE.gif" title="Smiley hap rouge" alt="Smiley hap rouge" />', $texte);
+$texte = str_replace(':noreddape:', '<img src="/images/smileys/noreddape.gif" title="Smiley nohap rouge" alt="Smiley nohap rouge" />', $texte);
+$texte = str_replace(':a:', '<img src="/images/smileys/a.gif" title="Awesome face" alt="Awesome face" />', $texte);
+$texte = str_replace('8D', '<img src="/images/smileys/8D.png" width="19" height="19" title="8D" alt="8D" />', $texte);
+$texte = str_replace(':nohap:', '<img src="/images/smileys/nohap.gif" title="No hap" alt="No hap" />', $texte);
+$texte = str_replace(':noel:', '<img src="/images/smileys/noel.gif" title="Noël" alt="Noël" />', $texte);
+$texte = str_replace(':)', '<img src="/images/smileys/smiley-content.png" width="16" height="16" title="Toad Content" alt="Toadd Content" />', $texte);
+$texte = str_replace(':D', '<img src="/images/smileys/super-content.gif" title=" Toad super content" width="16" height="16" alt="Toad super content" />', $texte);
+$texte = str_replace(':|', '<img src="/images/smileys/neutre.png" title="Toad Neutre" alt="Toad Neutre" />', $texte);
+$texte = str_replace(';)', '<img src="/images/smileys/clin_d_oeil.gif" title="Toad clin d\'oeil " alt="Toad clin d\'\oeil" width="16" height="16" />', $texte);
+$texte = str_replace(':(', '<img src="/images/smileys/pas_content.png" title="Toad pas content" alt=" Toad pas content" />', $texte);
+$texte = str_replace(':+:', '<img src="/images/smileys/pouce_leve.png" title="Toad positif" alt="Toad positif" />', $texte);
+$texte = str_replace(':o', '<img src="/images/smileys/surpris.png" title="surpris" alt="(surpris)" width="16" height="16" />', $texte);
+$texte = str_replace(';(', '<img src="/images/smileys/triste.png" title="triste" alt="(triste)" />', $texte);
+$texte = str_replace(':p', '<img src="/images/smileys/smiley-langue.png" title="langue" width="16" height="16" alt="(Smiley qui tire la langue)" />', $texte);
+$texte = str_replace(':dead:', '<img src="/images/smileys/dead.png" title="dead" alt="(Smiley Mort)" />', $texte);
+$texte = str_replace(':rire:', '<img src="/images/smileys/rire.gif" title="rire" alt="(Smiley qui rigole)" />', $texte);
+$texte = str_replace(':cool:', '<img src="/images/smileys/cool.png" width="16" height="16" title="cool" alt="(Smiley cool)" />', $texte);
+$texte = str_replace(':-:', '<img src="/images/smileys/pouce_baisse.png" title="nopouce" alt="(Pouce baissé)" />', $texte);
+$texte = str_replace('/gigahap/', '<img src="/images/smileys/gigahap.gif" title="gigahap" alt="(Hap géant)" />', $texte);
+$texte = str_replace('/giganoel/', '<img src="/images/smileys/giganoel.gif" title="giganoel" alt="(Noel géant)" />', $texte);
+$texte = str_replace(':toast:', '<img src="/images/smileys/toast.png" title="toast" alt="(Toast)" />', $texte);
+$texte = str_replace(':+1:', '<img src="/images/smileys/bulle_+1.png" title="+1" alt="(+1)" />', $texte);
+$texte = str_replace(':bref:', '<img src="/images/smileys/bulle_bref.png" title="bref" alt="(Bref...)" />', $texte);
+$texte = str_replace(':vivept:', '<img src="/images/smileys/bulle_PT.png" title="vivept" alt="(Vive Planète Toad !)" />', $texte);
+$texte = str_replace(':salut:', '<img src="/images/smileys/bulle_salut.png" title="salut" alt="(Salut !)" />', $texte);
+$texte = str_replace(':toaddlegenial:', '<img src="/images/smileys/bulle_toaddle.png" title="toaddlegenial" alt="(Toaddle est génial !)" />', $texte);
+$texte = str_replace(':tusors:', '<img src="/images/smileys/bulle_tu_sors.png" title="tusors" alt="(Tu sors !)" />', $texte);
+$texte = str_replace(':zut:', '<img src="/images/smileys/bulle_zut.png" title="zut" alt="(Zut !)" />', $texte);
 $texte = str_replace(':champi:', '<img src="./champi.png" title="champi" alt="Champi" width="15" height="14" />', $texte);
-$texte = str_replace(':champoadgenie:', '<img src="//images.planete-toad.fr/smileys/bulle_champoad.png" title="champoadgenie" alt="(Champoad est un génie !)" />', $texte);
-$texte = str_replace(':tanktoad:', '<img src="//images.planete-toad.fr/smileys/tanktoad.png" title="tanktoad" alt="(Tank Toad)" />', $texte);
-$texte = str_replace(':malou:', '<img src="//images.planete-toad.fr/smileys/bulle_malou.png" title="malou" alt="Mais oui c\'est clair !" />', $texte);
-$texte = str_replace(':sandero:', '<img src="//images.planete-toad.fr/smileys/bulle_sandero.png" title="sandero" alt="This is the Dacia Sandero !" />', $texte);
-$texte = str_replace(':haha:', '<img src="//images.planete-toad.fr/smileys/haha.gif" title="haha" alt="HAHAHAHAHAHA !" />', $texte);
-$texte = str_replace(':mariodance:', '<img src="//images.planete-toad.fr/smileys/dance.gif" title="dance" alt="(Mario qui danse)" />', $texte);
-$texte = str_replace(':mariodanse:', '<img src="//images.planete-toad.fr/smileys/dance.gif" title="dance" alt="(Mario qui danse)" />', $texte);
-$texte = str_replace(':mariobanane:', '<img src="//images.planete-toad.fr/smileys/mariobanane.gif" title="banane" alt="(Mario qui danse avec une banane)" />', $texte);
-$texte = str_replace(':PAF:', '<img src="//images.planete-toad.fr/smileys/paf.gif" title="paf" alt="PAF!" />', $texte);
-$texte = str_replace(':nerdz:', '<img src="//images.planete-toad.fr/smileys/nerdz.png" title="Smiley nerdz" alt="Smiley nerdz" />', $texte);
-$texte = str_replace(':kdo:', '<img src="//images.planete-toad.fr/smileys/kdo.gif" title="Point K-Do" alt="Point K-Do" />', $texte);
-$texte = str_replace(':facepalm:', '<img src="//images.planete-toad.fr/smileys/facepalm.gif" title="Smiley Facepalm" alt="Smiley Facepalm" />', $texte);
-$texte = str_replace(':grabspopcorn:', '<img src="//images.planete-toad.fr/smileys/bulle_pop_corn.png" title="Grabs Pop Corn !" alt="Grabs Pop Corn !" />', $texte);
-$texte = str_replace(':grabpopcorn:', '<img src="//images.planete-toad.fr/smileys/bulle_pop_corn.png" title="Grab Pop Corn !" alt="Grabs Pop Corn !" />', $texte);
-$texte = str_replace(':rire2:', '<img src="//images.planete-toad.fr/smileys/rire2.png" title="Rire2" alt="(Smiley qui rigole 2)" />', $texte);
-$texte = str_replace(':swaghap:', '<img src="//images.planete-toad.fr/smileys/swaghap.gif" title="SwagHap" alt="(Swag Hap Maggle !)" />', $texte);
-$texte = str_replace('#TournoisEté2016', '<b>#TournoisEté2016</b> <img src="//images.planete-toad.fr/anims.png" title="#TournoisEté2016" alt="#TournoisEté2016" />', $texte);
-$texte = str_replace(':happy:', '<img src="//images.planete-toad.fr/smileys/happy.png" title="Smiley happy" alt="Smiley hap rouge" />', $texte);
-$texte = str_replace(':hum:', '<img src="//images.planete-toad.fr/smileys/Hum.png" title="Smiley réfléchi" alt="Smiley hap rouge" />', $texte);
-$texte = str_replace(':sisi:', '<img src="//images.planete-toad.fr/smileys/sisi.gif" title="Si, si" alt="Si, si" />', $texte);
-$texte = str_replace(':8:', '<img src="//images.planete-toad.fr/smileys/note.png" title="^^" alt="^^" />', $texte);
-$texte = str_replace(':dab:', '<img src="//images.planete-toad.fr/smileys/dab.png" title="Luigi\'s doing the dab !" alt="Luigi\'s doing the dab !" />', $texte);
-$texte = str_replace(':deathstare:', '<img src="//images.planete-toad.fr/smileys/deathstare.png" title="Luigi\'s death stare !" alt="Luigi\'s death stare !" />', $texte);
-$texte = str_replace(':milk&cookies:', '<img src="//images.planete-toad.fr/smileys/MilkAndCookies.gif" title="Milk And Cookies !" alt="Milk And Cookies !" />', $texte);
-$texte = str_replace(':AH:', '<img src="//images.planete-toad.fr/smileys/AH.png" title="AH !" alt="AH !" />', $texte);
+$texte = str_replace(':champoadgenie:', '<img src="/images/smileys/bulle_champoad.png" title="champoadgenie" alt="(Champoad est un génie !)" />', $texte);
+$texte = str_replace(':tanktoad:', '<img src="/images/smileys/tanktoad.png" title="tanktoad" alt="(Tank Toad)" />', $texte);
+$texte = str_replace(':malou:', '<img src="/images/smileys/bulle_malou.png" title="malou" alt="Mais oui c\'est clair !" />', $texte);
+$texte = str_replace(':sandero:', '<img src="/images/smileys/bulle_sandero.png" title="sandero" alt="This is the Dacia Sandero !" />', $texte);
+$texte = str_replace(':haha:', '<img src="/images/smileys/haha.gif" title="haha" alt="HAHAHAHAHAHA !" />', $texte);
+$texte = str_replace(':mariodance:', '<img src="/images/smileys/dance.gif" title="dance" alt="(Mario qui danse)" />', $texte);
+$texte = str_replace(':mariodanse:', '<img src="/images/smileys/dance.gif" title="dance" alt="(Mario qui danse)" />', $texte);
+$texte = str_replace(':mariobanane:', '<img src="/images/smileys/mariobanane.gif" title="banane" alt="(Mario qui danse avec une banane)" />', $texte);
+$texte = str_replace(':PAF:', '<img src="/images/smileys/paf.gif" title="paf" alt="PAF!" />', $texte);
+$texte = str_replace(':nerdz:', '<img src="/images/smileys/nerdz.png" title="Smiley nerdz" alt="Smiley nerdz" />', $texte);
+$texte = str_replace(':kdo:', '<img src="/images/smileys/kdo.gif" title="Point K-Do" alt="Point K-Do" />', $texte);
+$texte = str_replace(':facepalm:', '<img src="/images/smileys/facepalm.gif" title="Smiley Facepalm" alt="Smiley Facepalm" />', $texte);
+$texte = str_replace(':grabspopcorn:', '<img src="/images/smileys/bulle_pop_corn.png" title="Grabs Pop Corn !" alt="Grabs Pop Corn !" />', $texte);
+$texte = str_replace(':grabpopcorn:', '<img src="/images/smileys/bulle_pop_corn.png" title="Grab Pop Corn !" alt="Grabs Pop Corn !" />', $texte);
+$texte = str_replace(':rire2:', '<img src="/images/smileys/rire2.png" title="Rire2" alt="(Smiley qui rigole 2)" />', $texte);
+$texte = str_replace(':swaghap:', '<img src="/images/smileys/swaghap.gif" title="SwagHap" alt="(Swag Hap Maggle !)" />', $texte);
+$texte = str_replace('#TournoisEté2016', '<b>#TournoisEté2016</b> <img src="/images/anims.png" title="#TournoisEté2016" alt="#TournoisEté2016" />', $texte);
+$texte = str_replace(':happy:', '<img src="/images/smileys/happy.png" title="Smiley happy" alt="Smiley hap rouge" />', $texte);
+$texte = str_replace(':hum:', '<img src="/images/smileys/Hum.png" title="Smiley réfléchi" alt="Smiley hap rouge" />', $texte);
+$texte = str_replace(':sisi:', '<img src="/images/smileys/sisi.gif" title="Si, si" alt="Si, si" />', $texte);
+$texte = str_replace(':8:', '<img src="/images/smileys/note.png" title="^^" alt="^^" />', $texte);
+$texte = str_replace(':dab:', '<img src="/images/smileys/dab.png" title="Luigi\'s doing the dab !" alt="Luigi\'s doing the dab !" />', $texte);
+$texte = str_replace(':deathstare:', '<img src="/images/smileys/deathstare.png" title="Luigi\'s death stare !" alt="Luigi\'s death stare !" />', $texte);
+$texte = str_replace(':milk&cookies:', '<img src="/images/smileys/MilkAndCookies.gif" title="Milk And Cookies !" alt="Milk And Cookies !" />', $texte);
+$texte = str_replace(':AH:', '<img src="/images/smileys/AH.png" title="AH !" alt="AH !" />', $texte);
 
 // RPG !!!
 
 		// Cases
-$texte = str_replace('{ble}', '<img src="//images.planete-toad.fr/rpg/Case-Simple.png" title="Case Simple" alt="" />', $texte);
-$texte = str_replace('{obs}', '<img src="//images.planete-toad.fr/rpg/Case-Obstacle.png" title="Case Obstacle" alt="" />', $texte);
-$texte = str_replace('{bns}', '<img src="//images.planete-toad.fr/rpg/Case-Bonus.png" title="Case Bonus" alt="" />', $texte);
-$texte = str_replace('{tuy}', '<img src="//images.planete-toad.fr/rpg/Case-Tuyau.png" title="Case Tuyau" alt="" />', $texte);
-$texte = str_replace('{vid}', '<img src="//images.planete-toad.fr/rpg/Case-Vide.png" title="Case Vide" alt="" />', $texte);
-$texte = str_replace('{dor}', '<img src="//images.planete-toad.fr/rpg/Case-Porte.png" title="Case Porte" alt="" />', $texte);
-$texte = str_replace('{key}', '<img src="//images.planete-toad.fr/rpg/Case-Cle.png" title="Case Cle" alt="" />', $texte);
+$texte = str_replace('{ble}', '<img src="/images/rpg/Case-Simple.png" title="Case Simple" alt="" />', $texte);
+$texte = str_replace('{obs}', '<img src="/images/rpg/Case-Obstacle.png" title="Case Obstacle" alt="" />', $texte);
+$texte = str_replace('{bns}', '<img src="/images/rpg/Case-Bonus.png" title="Case Bonus" alt="" />', $texte);
+$texte = str_replace('{tuy}', '<img src="/images/rpg/Case-Tuyau.png" title="Case Tuyau" alt="" />', $texte);
+$texte = str_replace('{vid}', '<img src="/images/rpg/Case-Vide.png" title="Case Vide" alt="" />', $texte);
+$texte = str_replace('{dor}', '<img src="/images/rpg/Case-Porte.png" title="Case Porte" alt="" />', $texte);
+$texte = str_replace('{key}', '<img src="/images/rpg/Case-Cle.png" title="Case Cle" alt="" />', $texte);
 
 		// Objets
 	
-$texte = str_replace('{pieceschampis}', '<img src="//images.planete-toad.fr/rpg/Piece-Champi.png" title="Pièce Champi" alt="Pièce Champi" />', $texte);	
-$texte = str_replace('{obj:champi}', '<img src="//images.planete-toad.fr/rpg/Objets/Champignon.png" title="Champignon" alt="Champignon" />', $texte);
-$texte = str_replace('{obj:1up}', '<img src="//images.planete-toad.fr/rpg/Objets/Champi-up.png" title="Champignon-1up" alt="Champignon-1up" />', $texte);
-$texte = str_replace('{obj:champipower}', '<img src="//images.planete-toad.fr/rpg/Objets/Champi-power.png" title="Champignon-Power" alt="Champignon-Power" />', $texte);
-$texte = str_replace('{obj:sir}', '<img src="//images.planete-toad.fr/rpg/Objets/Sirop.png" title="Sirop" alt="Sirop" />', $texte);
-$texte = str_replace('{obj:cac}', '<img src="//images.planete-toad.fr/rpg/Objets/Cacahuete.png" title="Cacahuete" alt="Cacahuete" />', $texte);
-$texte = str_replace('{obj:cook}', '<img src="//images.planete-toad.fr/rpg/Objets/Cookie.png" title="Cookie" alt="Cookie" />', $texte);
-$texte = str_replace('{obj:cook-cac}', '<img src="//images.planete-toad.fr/rpg/Objets/Cookie-Cacahuete.png" title="Cookie-Cacahuete" alt="Cookie-Cacahuete" />', $texte);
+$texte = str_replace('{pieceschampis}', '<img src="/images/rpg/Piece-Champi.png" title="Pièce Champi" alt="Pièce Champi" />', $texte);	
+$texte = str_replace('{obj:champi}', '<img src="/images/rpg/Objets/Champignon.png" title="Champignon" alt="Champignon" />', $texte);
+$texte = str_replace('{obj:1up}', '<img src="/images/rpg/Objets/Champi-up.png" title="Champignon-1up" alt="Champignon-1up" />', $texte);
+$texte = str_replace('{obj:champipower}', '<img src="/images/rpg/Objets/Champi-power.png" title="Champignon-Power" alt="Champignon-Power" />', $texte);
+$texte = str_replace('{obj:sir}', '<img src="/images/rpg/Objets/Sirop.png" title="Sirop" alt="Sirop" />', $texte);
+$texte = str_replace('{obj:cac}', '<img src="/images/rpg/Objets/Cacahuete.png" title="Cacahuete" alt="Cacahuete" />', $texte);
+$texte = str_replace('{obj:cook}', '<img src="/images/rpg/Objets/Cookie.png" title="Cookie" alt="Cookie" />', $texte);
+$texte = str_replace('{obj:cook-cac}', '<img src="/images/rpg/Objets/Cookie-Cacahuete.png" title="Cookie-Cacahuete" alt="Cookie-Cacahuete" />', $texte);
 
 		// Power-ups
 		
-$texte = str_replace('{pup:fdefeu}', '<img src="//images.planete-toad.fr/rpg/Power-ups/Fleur-de-Feu.png" title="Fleur De Feu" alt="Fleur De Feu" />', $texte);
-$texte = str_replace('{pup:fdeglace}', '<img src="//images.planete-toad.fr/rpg/Power-ups/Fleur-de-Glace.png" title="Fleur De Glace" alt="Fleur De Glace" />', $texte);
-$texte = str_replace('{pup:feuille}', '<img src="//images.planete-toad.fr/rpg/Power-ups/Feuille.png" title="Feuille" alt="Feuille" />', $texte);
-$texte = str_replace('{pup:cloche}', '<img src="//images.planete-toad.fr/rpg/Power-ups/Cloche.png" title="Cloche" alt="Cloche" />', $texte);
-$texte = str_replace('{pup:fboomerang}', '<img src="//images.planete-toad.fr/rpg/Power-ups/Fleur-Boomerang.png" title="Fleur Boomerang" alt="Fleur Boomerang" />', $texte);
+$texte = str_replace('{pup:fdefeu}', '<img src="/images/rpg/Power-ups/Fleur-de-Feu.png" title="Fleur De Feu" alt="Fleur De Feu" />', $texte);
+$texte = str_replace('{pup:fdeglace}', '<img src="/images/rpg/Power-ups/Fleur-de-Glace.png" title="Fleur De Glace" alt="Fleur De Glace" />', $texte);
+$texte = str_replace('{pup:feuille}', '<img src="/images/rpg/Power-ups/Feuille.png" title="Feuille" alt="Feuille" />', $texte);
+$texte = str_replace('{pup:cloche}', '<img src="/images/rpg/Power-ups/Cloche.png" title="Cloche" alt="Cloche" />', $texte);
+$texte = str_replace('{pup:fboomerang}', '<img src="/images/rpg/Power-ups/Fleur-Boomerang.png" title="Fleur Boomerang" alt="Fleur Boomerang" />', $texte);
 
 		// Ennemis
 		
-$texte = str_replace('{B01}', '<img src="//images.planete-toad.fr/rpg/Ennemis/Goomba.png" title="Goomba" alt="Goomba" />', $texte);
-$texte = str_replace('{B02}', '<img src="//images.planete-toad.fr/rpg/Ennemis/Koopa-Vert.png" title="Koopa Vert" alt="Koopa Vert" />', $texte);
-$texte = str_replace('{B03}', '<img src="//images.planete-toad.fr/rpg/Ennemis/Koopa-Rouge.png" title="Koopa Rouge" alt="Koopa Rouge" />', $texte);
-$texte = str_replace('{B04}', '<img src="//images.planete-toad.fr/rpg/Ennemis/Paragoomba.png" title="Paragoomba" alt="Paragoomba" />', $texte);
-$texte = str_replace('{B05}', '<img src="//images.planete-toad.fr/rpg/Ennemis/Paratroopa-Vert.png" title="Paratroopa-vert" alt="Paratroopa-vert" />', $texte);
-$texte = str_replace('{B06}', '<img src="//images.planete-toad.fr/rpg/Ennemis/Paratroopa-Rouge.png" title="Paratroopa-rouge" alt="Paratroopa-rouge" />', $texte);
-$texte = str_replace('{B07}', '<img src="//images.planete-toad.fr/rpg/Ennemis/Heriss.png" title="Heriss" alt="Heriss" />', $texte);
-$texte = str_replace('{B08}', '<img src="//images.planete-toad.fr/rpg/Ennemis/frere-marto.png" title="Frère Marto" alt="Frère Marto" />', $texte);
-$texte = str_replace('{B09}', '<img src="//images.planete-toad.fr/rpg/Ennemis/Kamek.png" title="Kamek" alt="Kamek" />', $texte);
-$texte = str_replace('{B10}', '<img src="//images.planete-toad.fr/rpg/Ennemis/Lakitu.png" title="Lakitu" alt="Lakitu" />', $texte);
-$texte = str_replace('{B11}', '<img src="//images.planete-toad.fr/rpg/Ennemis/Wingo.png" title="Wingo" alt="Wingo" />', $texte);
+$texte = str_replace('{B01}', '<img src="/images/rpg/Ennemis/Goomba.png" title="Goomba" alt="Goomba" />', $texte);
+$texte = str_replace('{B02}', '<img src="/images/rpg/Ennemis/Koopa-Vert.png" title="Koopa Vert" alt="Koopa Vert" />', $texte);
+$texte = str_replace('{B03}', '<img src="/images/rpg/Ennemis/Koopa-Rouge.png" title="Koopa Rouge" alt="Koopa Rouge" />', $texte);
+$texte = str_replace('{B04}', '<img src="/images/rpg/Ennemis/Paragoomba.png" title="Paragoomba" alt="Paragoomba" />', $texte);
+$texte = str_replace('{B05}', '<img src="/images/rpg/Ennemis/Paratroopa-Vert.png" title="Paratroopa-vert" alt="Paratroopa-vert" />', $texte);
+$texte = str_replace('{B06}', '<img src="/images/rpg/Ennemis/Paratroopa-Rouge.png" title="Paratroopa-rouge" alt="Paratroopa-rouge" />', $texte);
+$texte = str_replace('{B07}', '<img src="/images/rpg/Ennemis/Heriss.png" title="Heriss" alt="Heriss" />', $texte);
+$texte = str_replace('{B08}', '<img src="/images/rpg/Ennemis/frere-marto.png" title="Frère Marto" alt="Frère Marto" />', $texte);
+$texte = str_replace('{B09}', '<img src="/images/rpg/Ennemis/Kamek.png" title="Kamek" alt="Kamek" />', $texte);
+$texte = str_replace('{B10}', '<img src="/images/rpg/Ennemis/Lakitu.png" title="Lakitu" alt="Lakitu" />', $texte);
+$texte = str_replace('{B11}', '<img src="/images/rpg/Ennemis/Wingo.png" title="Wingo" alt="Wingo" />', $texte);
 
 
 		// Personnages
 		
-$texte = str_replace('{Pma}', '<img src="//images.planete-toad.fr/rpg/Persos/Mario.png" title="Mario" alt="Mario" />', $texte);
-$texte = str_replace('{Plu}', '<img src="//images.planete-toad.fr/rpg/Persos/Luigi.png" title="Luigi" alt="Luigi" />', $texte);
-$texte = str_replace('{Ppe}', '<img src="//images.planete-toad.fr/rpg/Persos/Peach.png" title="Peach" alt="Peach" />', $texte);
-$texte = str_replace('{Pto}', '<img src="//images.planete-toad.fr/rpg/Persos/Toad.png" title="Toad" alt="Toad" />', $texte);
-$texte = str_replace('{Pyo}', '<img src="//images.planete-toad.fr/rpg/Persos/Yoshi.png" title="Yoshi" alt="Yoshi" />', $texte);
-$texte = str_replace('{Pwa}', '<img src="//images.planete-toad.fr/rpg/Persos/Wario.png" title="Wario" alt="Wario" />', $texte);
-$texte = str_replace('{Pbo}', '<img src="//images.planete-toad.fr/rpg/Persos/Bowser.png" title="Bowser" alt="Bowser" />', $texte);
-$texte = str_replace('{Pjr}', '<img src="//images.planete-toad.fr/rpg/Persos/BowserJr.png" title="BowserJr" alt="BowserJr" />', $texte);
-$texte = str_replace('{Pct}', '<img src="//images.planete-toad.fr/rpg/Persos/CaptainToad.png" title="CaptainToad" alt="CaptainToad" />', $texte);
-$texte = str_replace('{Pha}', '<img src="//images.planete-toad.fr/rpg/Persos/Rosalina.png" title="Harmonie" alt="Harmonie" />', $texte);
+$texte = str_replace('{Pma}', '<img src="/images/rpg/Persos/Mario.png" title="Mario" alt="Mario" />', $texte);
+$texte = str_replace('{Plu}', '<img src="/images/rpg/Persos/Luigi.png" title="Luigi" alt="Luigi" />', $texte);
+$texte = str_replace('{Ppe}', '<img src="/images/rpg/Persos/Peach.png" title="Peach" alt="Peach" />', $texte);
+$texte = str_replace('{Pto}', '<img src="/images/rpg/Persos/Toad.png" title="Toad" alt="Toad" />', $texte);
+$texte = str_replace('{Pyo}', '<img src="/images/rpg/Persos/Yoshi.png" title="Yoshi" alt="Yoshi" />', $texte);
+$texte = str_replace('{Pwa}', '<img src="/images/rpg/Persos/Wario.png" title="Wario" alt="Wario" />', $texte);
+$texte = str_replace('{Pbo}', '<img src="/images/rpg/Persos/Bowser.png" title="Bowser" alt="Bowser" />', $texte);
+$texte = str_replace('{Pjr}', '<img src="/images/rpg/Persos/BowserJr.png" title="BowserJr" alt="BowserJr" />', $texte);
+$texte = str_replace('{Pct}', '<img src="/images/rpg/Persos/CaptainToad.png" title="CaptainToad" alt="CaptainToad" />', $texte);
+$texte = str_replace('{Pha}', '<img src="/images/rpg/Persos/Rosalina.png" title="Harmonie" alt="Harmonie" />', $texte);
 
 
 

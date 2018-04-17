@@ -41,7 +41,7 @@ echo '<title>'.$titre.'</title>';
 if (!empty($descrip)) {echo'<meta name="description" content="'.$descrip.'">';}
 if (!empty($descrip)) {echo'<meta property="og:description" content="'.$descrip.'" />';}
 if (!empty($canonical)) {echo'<link rel="canonical" href="'.$canonical.'">'; }
-$url = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+$url = 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 echo'<meta property="og:url" content="'.$url.'" />';
 ?>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -72,51 +72,34 @@ if (isset($titre)) {
 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
 <link rel="manifest" href="/images/favicon/manifest.json">
 <link rel="publisher" href="https://plus.google.com/114158430171108023491" />
-
-<?php
-
-//Patch si le cookie est >= à 6
- if ($_COOKIE['design'] >= 6) {
-echo '<link rel="stylesheet" type="text/css" title="Design" href="//js.planete-toad.fr/css/bleu.css" />';
-$expire = time() + 365*24*3600;
-setcookie('design', '', $expire);
-header("Refresh:0");
- }
- else { echo''; 
- }
-
- if (empty($_COOKIE['design']) OR $_COOKIE['design']==0) {
-echo'<link rel="stylesheet" type="text/css" title="Design" href="//js.planete-toad.fr/css/bleu.css" />'; }
+<?php if (empty($_COOKIE['design']) OR $_COOKIE['design']==0) {
+echo'<link rel="stylesheet" type="text/css" title="Design" href="../js/css/bleu.css" />'; }
 
 if ((isset($_COOKIE['design']) && $_COOKIE['design']==1)) {
-echo'<link rel="stylesheet" type="text/css" title="Design" href="//js.planete-toad.fr/css/rouge.css" />'; }
-
-if ((isset($_COOKIE['design']) && $_COOKIE['design']==5)) {
-echo'<link rel="stylesheet" type="text/css" title="Design" href="./js/css/noir.css" />'; }
+echo'<link rel="stylesheet" type="text/css" title="Design" href="/js/css/rouge.css" />'; }
 
 /* nom de l ancien bg : backgroundDay2.jpg */
 ?>
 
-<?php
-//TEST, NE PAS RETIRER
-if($_COOKIE['testcss']=='true')
-{
-	echo '<link rel="stylesheet" type="text/css" title="Design" href="/testcss.css" >';
-}
-else
-{
-	echo '<link rel="stylesheet" type="text/css" title="Design" href="/mobile.css" media="screen and (max-width: 850px)" />';
-	echo '<link rel="stylesheet" type="text/css" title="Design" href="/style.css" media="screen and (min-width: 850px)">';
-}
+<link rel="stylesheet" type="text/css" title="Design" href="/mobile.css" media="screen and (max-width: 850px)" />
+<link rel="stylesheet" type="text/css" title="Design" href="/style.css" media="screen and (min-width: 850px)">
 
+<?php
+/*// VERIF DES THEMES ODYSSEY
+$ifThemePerso = $db->prepare('SELECT theme_odyssey FROM forum_membres WHERE membre_id = '.$_SESSION['id'].'');
+$ifThemePerso->execute();
+$themePerso = $ifThemePerso->fetch();
+
+if ($themePerso==1) {
 if ((isset($_COOKIE['design']) && $_COOKIE['design']==2)) {
 echo'<link rel="stylesheet" type="text/css" title="Design" href="./theme/smw/smw.css" />'; }
 if ((isset($_COOKIE['design']) && $_COOKIE['design']==3)) {
 echo'<link rel="stylesheet" type="text/css" title="Design" href="./theme/sm3dw/sm3dw.css" />'; }
 if ((isset($_COOKIE['design']) && $_COOKIE['design']==4)) {
 echo'<link rel="stylesheet" type="text/css" title="Design" href="./theme/odyssey/odyssey.css" />'; }
-?>
-<script src="//js.planete-toad.fr/jquery.js"></script>
+}
+*/?>
+<script src="/js/jquery.js"></script>
 </head>
 <body>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -127,7 +110,7 @@ setcookie('id', '', time(), null, null, false);
 setcookie('password', '', time(), null, null, false);
 session_destroy();
 }
-include($_SERVER["DOCUMENT_ROOT"]."/includes/functions.php");
+include("functions.php");
 
 //Création des variables
 if ($id!=0) {

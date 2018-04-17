@@ -25,10 +25,7 @@ $theme_odyssey = $data['theme_odyssey']; ?>
 <img src="/images/theme-odyssey.png" /><br/>
 <?php if ($theme_odyssey==1) echo (
 '<a href="design-odyssey.php"><input type="submit" id="envoyer" name="envoyer" value="Thème Super Mario Odyssey"></a><br/>');
-else echo("Vous n'avez pas le thème Super Mario Odyssey.");?>
-
-<img src="/images/theme-noir.png" /><br/>
-<a href="design-noir.php"><input type="submit" id="envoyer" name="envoyer" value="Thème Noir classique [BETA]"></a><br/>
+else echo("Vous n'avez pas le thème Super Mario Odyssey."); ?>
 
 <?php
 include("includes/fin.php");
